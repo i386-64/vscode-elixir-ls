@@ -102,7 +102,7 @@
       "name": "constant.language.symbol.elixir"
     },
     {
-      "match": "(?<!\\.)\\b(do|end|case|bc|lc|for|if|cond|with|unless|try|receive|fn|defmodule|defprotocol|defimpl|defrecordp?|defstruct|defdelegate|defcallback|defexception|defoverridable|defguardp?|exit|after|rescue|catch|else|raise|throw|quote|unquote|super|when|and|or|not|in|describe|test|schema|embedded_schema|setup|query|field|input_object|enum|defenum|value)\\b(?![?!])",
+      "match": "(?<!\\.)\\b(do|end|case|bc|lc|for|if|cond|with|unless|try|receive|fn|defmodule|defprotocol|defimpl|defrecordp?|defstruct|defdelegate|defcallback|defexception|defoverridable|defguardp?|exit|after|rescue|catch|else|raise|throw|quote|unquote|super|when|and|or|not|in|describe|test|schema|embedded_schema|setup|query|field|input_object|enum|defenum|value|assert|test_with_mock|refute|assert_raise|assert_in_delta|assert_receive|assert_received|flunk|refute|refute_in_delta|refute_receive|refute_received)\\b(?![?!])",
       "name": "keyword.control.elixir"
     },
     {
