@@ -19,7 +19,7 @@
       "name": "meta.module.elixir"
     },
     {
-      "begin": "@(module|type)?doc (~s)?\"\"\"",
+      "begin": "@(module|type|enum)?doc (~s)?\"\"\"",
       "comment": "@doc with interpolated heredocs",
       "end": "\\s*\"\"\"",
       "name": "comment.documentation.heredoc.elixir",
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "begin": "@(module|type)?doc ~s'''",
+      "begin": "@(module|type|enum)?doc ~s'''",
       "comment": "@doc with interpolated single quoted heredocs",
       "end": "\\s*'''",
       "name": "comment.documentation.heredoc.elixir",
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "begin": "@(module|type)?doc ~S\"\"\"",
+      "begin": "@(module|type|enum)?doc ~S\"\"\"",
       "comment": "@doc with heredocs is treated as documentation",
       "end": "\\s*\"\"\"",
       "name": "comment.documentation.heredoc.elixir",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "begin": "@(module|type)?doc ~S'''",
+      "begin": "@(module|type|enum)?doc ~S'''",
       "comment": "@doc with heredocs is treated as documentation",
       "end": "\\s*'''",
       "name": "comment.documentation.heredoc.elixir",
@@ -70,11 +70,11 @@
     },
     {
       "comment": "@doc false is treated as documentation",
-      "match": "@(module|type)?doc false",
+      "match": "@(module|type|enum)?doc false",
       "name": "comment.documentation.false"
     },
     {
-      "begin": "@(module|type)?doc \"",
+      "begin": "@(module|type|enum)?doc \"",
       "comment": "@doc with string is treated as documentation",
       "end": "\"",
       "name": "comment.documentation.string",
@@ -102,7 +102,7 @@
       "name": "constant.language.symbol.elixir"
     },
     {
-      "match": "(?<!\\.)\\b(do|end|case|bc|lc|for|if|cond|with|unless|try|receive|fn|defmodule|defprotocol|defimpl|defrecordp?|defstruct|defdelegate|defcallback|defexception|defoverridable|defguardp?|exit|after|rescue|catch|else|raise|throw|quote|unquote|super|when|and|or|not|in|describe|test|schema|embedded_schema|setup|query|field|input_object|enum|defenum|value|assert|test_with_mock|refute|assert_raise|assert_in_delta|assert_receive|assert_received|flunk|refute|refute_in_delta|refute_receive|refute_received)\\b(?![?!])",
+      "match": "(?<!\\.)\\b(do|end|case|bc|lc|for|if|cond|with|unless|try|receive|fn|defmodule|defprotocol|defimpl|defrecordp?|defstruct|defdelegate|defcallback|defexception|defoverridable|defguardp?|exit|after|rescue|catch|else|raise|throw|quote|unquote|super|when|and|or|not|in|describe|test|schema|embedded_schema|setup|query|field|input_object|enum|defenum|value|assert|test_with_mock|refute|assert_raise|assert_in_delta|assert_receive|assert_received|flunk|refute|refute_in_delta|refute_receive|refute_received|belongs_to|timestamps|has_one|has_many)\\b(?![?!])",
       "name": "keyword.control.elixir"
     },
     {
